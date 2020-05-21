@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Diagram Demo</title>
+    
+    <script type="text/javascript" src="drawing.js" charset="utf-8"></script>
+    <script type="text/javascript" src="events.js" charset="utf-8"></script>
+    <script type="text/javascript" src="class.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script.js" charset="utf-8"></script>
+    <script type="text/javascript" src="demo.js" charset="utf-8"></script>
+
+    <style>
+        @import url('https://use.fontawesome.com/releases/v5.11.2/css/all.css');
+
+        #canvas {
+            border: black 2px solid;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 600;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Diagram Control Usage Demo</h1>
+    <form style="float:left">
+        second order: <input id="second" value="10" type="number" />
+        <button onclick="load(); return false;">Reload</button>
+        <p id="mousePosition">p</p>
+        <h6>Parameters:</h6>
+        widthViewOriginal <input id="widthViewOriginal" value="" type="number" />
+        heigthViewOriginal <input id="heightViewOriginal" value="" type="number" />
+        <br />
+        Note Height <input id="noteHeight" value="" type="number" />
+        Note Width <input id="noteWidth" value="" type="number" />
+        <br />
+        Collapsed Note Height <input id="collapsedNoteHeight" value="" type="number" />
+        Collapsed Note Width <input id="collapsedNoteWidth" value="" type="number" />
+        <br />
+        Distance between parent and child <input id="distance" value="" type="number" />
+        <br />
+        Button Height <input id="buttonHeight" value="" type="number" />
+        Button Width <input id="buttonWidth" value="" type="number" />
+        <br />
+        Base angle <input id="baseAngle" value="" />
+        <br />
+        Animation Speed <input id="animationSpeed" value="" />
+        Animation Step <input id="animationStep" value="" />
+        <br />
+        Layout <input id="layout" value="" />
+        Symmetrisch: 1, Arc: 2
+        <br />
+        Layout Quelle <input id="layoutSource" value="1" />
+        Vordefinierte Parameter: Symmetrisch: 1, Arc: 2
+        <br />
+        Benutzerdefiniert: 3
+        <br />
+        <p id="buttonMessage"></p>
+    </form>
+    
+   
+
+
+    <!-- Required HTML code for Diagram Control-->
+    <canvas id="canvas" width="1000" height="850"></canvas>
+    <div id="images" style="display:none">
+
+    </div>
+    <!--   -->
+
+</body>
+</html>
